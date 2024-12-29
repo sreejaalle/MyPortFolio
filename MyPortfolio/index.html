@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .about img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 15px;
+            transition: transform 0.3s ease;
+        }
+        .about img:hover {
+            transform: scale(1.1);
+        }
+        .skills ul, .projects ul, .certifications ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .skills li, .projects li, .certifications li {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skills li:hover, .projects li:hover, .certifications li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        .projects img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .projects img:hover {
+            transform: scale(1.05);
+        }
+        .resume a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .resume a:hover {
+            background-color: #34495e;
+            transform: scale(1.05);
+        }
+        .contact {
+            text-align: center;
+            background-color: #ecf0f1;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .achievements ul, .certifications ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .achievements li, .certifications li {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alle Sreeja</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <img src="./images/profile.jpg.jpeg"/>
+        <p>I am a motivated individual with a keen interest in developing practical solutions through technology. Experienced in Java, Python, and Data Structures, and determined to leverage my skills in creating innovative mobile applications. Pursuing a B.Tech in Information Technology with a passion for continuous learning.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>HTML & CSS</strong></li>
+            <li><strong>JavaScript</strong></li>
+            <li><strong>Java</strong></li>
+            <li><strong>Python</strong></li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Calculator</h3>
+                <p>A simple calculator built with HTML, CSS, and JavaScript that allows users to perform basic arithmetic operations.</p>
+                <img src="./images/project1.jpg.png" alt="Project 1">
+            </li>
+            <li>
+                <h3>Password Generator</h3>
+                <p>Generates secure passwords using a mix of uppercase, lowercase, numbers, and symbols with JavaScript functionality.</p>
+                <img src="./images/project2.jpg.jpg" alt="Project 2">
+            </li>
+    
+            <li>
+                <h3>Grocery Management System</h3>
+                <p>A Python-based system that manages product information, stock levels, and transactions with an intuitive interface.</p>
+                <img src="./images/project3.jpg.png" alt="Project 3">
+            </li>
+        </ul>
+    </section>
+
+    <section class="achievements"
+        <h2>Achievements</h2>
+        <ul>
+            <li><strong>STATE Level Participation</strong> - Certificate in Handball and Athletics.</li>
+            <li><strong>DISTRICT Level Merit</strong> - Certificate in Handball under 19 category.</li>
+            <li><strong>B-Certificate in NCC</strong> - Rank: Lance Corporal.</li>
+        </ul>
+    </section>
+
+    <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li><strong>The Joy of Computing using Python</strong></li>
+            <li><strong>Programming Essentials In Python</strong></li>
+            <li><strong>Java Programming Fundamentals</strong></li>
+            <li><strong>HTML5 and CSS Fundamentals</strong></li>
+        </ul>
+    </section>
+
+    <section class="resume">
+        <h2>Resume</h2>
+        <a href="./files/resume.pdf.pdf" download>Download My Resume</a>
+
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sreejareddyalle@gmail.com">sreejareddyalle@gmail.com</a></p>
+        <p>Phone: 7288848108</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alle Sreeja. All rights reserved. 
+            <a href="https://github.com/sreejaalle" target="_blank">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/sreeja-alle-6a75752a8" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
